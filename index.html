@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Luxe Scents — Premium Perfumes</title>
+  <meta name="description" content="Luxe Scents — handcrafted premium perfumes. Discover signature scents and shop our curated collections." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Luxe Scents — Premium Perfumes" />
+  <meta property="og:description" content="Handcrafted premium perfumes. Discover your signature scent." />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Luxe+Scents" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#home" class="logo-link">
+          <img src="https://via.placeholder.com/140x40?text=Luxe+Scents" alt="Luxe Scents logo" width="140" height="40" />
+        </a>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Main">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle navigation">
+          ☰
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a id="cart-btn" class="cart-btn" href="#cart" aria-label="View cart">
+          🛒 <span id="cart-count" aria-live="polite">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <h1>Elevate Your Essence</h1>
+        <p class="lead">Handcrafted perfume blends inspired by nature and luxury.</p>
+        <a href="#products" class="btn primary-cta">Explore Collection</a>
+      </div>
+    </section>
+
+    <section id="products" class="container products-section">
+      <h2>Our Collection</h2>
+      <p class="section-intro">Curated scents for every mood and moment.</p>
+
+      <ul class="products-grid" aria-live="polite">
+        <li class="product-card">
+          <a class="product-link" href="#product-midnight-rose">
+            <img src="https://via.placeholder.com/400x400?text=Midnight+Rose" alt="Midnight Rose perfume bottle" loading="lazy" />
+          </a>
+          <div class="product-info">
+            <h3><a href="#product-midnight-rose">Midnight Rose</a></h3>
+            <p class="price">$85</p>
+            <p class="product-desc">Floral notes with a hint of mystery — bergamot and rose.</p>
+            <button class="btn add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+
+        <li class="product-card">
+          <a class="product-link" href="#product-ocean-breeze">
+            <img src="https://via.placeholder.com/400x400?text=Ocean+Breeze" alt="Ocean Breeze perfume bottle" loading="lazy" />
+          </a>
+          <div class="product-info">
+            <h3><a href="#product-ocean-breeze">Ocean Breeze</a></h3>
+            <p class="price">$75</p>
+            <p class="product-desc">Fresh aquatic accord with vibrant citrus and sea notes.</p>
+            <button class="btn add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+
+        <li class="product-card">
+          <a class="product-link" href="#product-amber-noir">
+            <img src="https://via.placeholder.com/400x400?text=Amber+Noir" alt="Amber Noir perfume bottle" loading="lazy" />
+          </a>
+          <div class="product-info">
+            <h3><a href="#product-amber-noir">Amber Noir</a></h3>
+            <p class="price">$95</p>
+            <p class="product-desc">Warm amber and vanilla with a woody base — long-lasting depth.</p>
+            <button class="btn add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="about" class="container about-section">
+      <h2>About Luxe Scents</h2>
+      <p>We craft perfumes inspired by nature and luxury, using only the finest ingredients. Every bottle is blended by hand to create unique, memorable fragrances.</p>
+    </section>
+
+    <section id="contact" class="container contact-section">
+      <h2>Contact Us</h2>
+      <form id="contact-form" aria-label="Contact form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message" rows="4"></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <div id="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Luxe Scents. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
